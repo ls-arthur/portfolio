@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<html lang="pt">
+	<title>Review week 1</title>
+</head>
+<body>
+	<h1 id="top_page">Revisão da semana 01 - HTML</h1>
+	<nav>
+		<ol>
+			<li>HTML BASIC</li>
+				<ul>
+					<li><a href="#class01">O que é HTML</a></li>
+					<li><a href="#class02">Relevante historia do HTML</a></li>
+					<li><a href="#class03">Anatomia da Tag HTML</a></li>
+					<li><a href="#class04">Estrutura basica do HTML</a></li>
+					<li><a href="#class05">Modelos de Conteudo</a></li>
+				</ul>
+			<br>	
+			<li>ESSENTIALS HTML5 TAGS</li>
+				<ul>
+					<li><a href="#class06">Elementos de Titulo</a></li>
+					<li><a href="#class07">Listas</a></li>
+					<li><a href="#class08">Referencias de entidades de caracteres HTML</a></li>
+					<li><a href="#class09">Criando links</a></li>
+					<li><a href="#class10">Exibindo Imagens</a></li>
+				</ul>
+		</ol>
+	</nav>
+	<h2> - - - - - - - - - - HTML BASICO - - - - - - - - - -</h2>
+		<section id="class01">
+			<article>
+				<h3>O que é HTML?</h3>	
+					<p>HTML - Hypertext Markup Language.<br>
+					HTML é uma linguagem de marcação de texto. Na internet tudo está relacionado a conteudo e links, o HTML serve para que possamos estruturar a pagina web, e utilizar a marcação de hiperlinks para conectar um conteudo a outro, caracrterizand asism essa teia de internet.</p>
+			</article>
+		</section>
+		<section id="class02">	
+			<article>
+				<h3>Relevante história do HTML</h3>
+					Até o ano de 1997 não haviam padrões para o uso da linguagem HTML, seu intuito era unicamente a disponibilização de conteudo através de hiperlinks. Isso acarretava em diversas paginas que não eram renderizadas corretamente em diferentes navegadores.<br>
+					A partir de 1997 o W3C - Word Wide Web, sugiu com os primeiros padrões, os quais evoluiram até chegar no atualmente utilizado HTML5 em 2011. A W3C está no comando para definir o que se enquadra como padrões para o HTML5.
+					Existem algumas ferramentas quem podem se tornar interessantes no desenvolvimento de paginas HTML. Por exemplo, os sites recomendados abaixo. 
+					<nav>
+						<ul>
+							<li><a href="https://validator.w3.org/" target="_blank">W3C - site</a>
+								<span> -- Pode ser utilzado para validar se a estrutura do seu codigo html está correta.</span>
+							</li>
+							<li><a href="https://validator.w3.org/" target="_blank">Can I Use - site</a>
+								<span> -- Site que mantem o controle de padrões html5 - SVG - CSS - APIs JS. Pode servir como consulta ou para verificar a compatibilidade dos navegadores com determinado recurso</span>
+							</li>
+						</ul>
+					</nav>
+			</article>
+		</section>	
+		<section id="class03">
+			<article>
+				<h3>Anatomia da Tag HTML</h3>				
+					É importante entender que criar um documento html consiste em como sintaticamente e corretamente codificar uma tag html.<br>
+					Gerammente uma tag html consiste no conjunto de duas tags (há excessões de apenas uma tag), onde uma representa a tag de abertura e a segunta representa a tag de fechamento. Isso serve para representar onde o conteudo da tag começa e termina, portanto é correto entender que o conteudo da tag deve ser inserido entre essas duas tags.<br>
+					Uma tag de é representada pelo sinal de &lt; &gt;, onde dentro desses sinais existirá o elemento que identifica qual a tag desejada a se usar. Por exemplo na tag &lt;p&gt;, o elemento 'p' é utilizado para representar uma tag de paragrafo<br>
+					As tags de aberturas são representadas pelos sinais de menor e maior juntamente com o elemento da tag. - &lt;p&gt;<br>
+					As tags de fechamento são representadas pelos sinais de menor e maior, seguido do sinal de barra, juntamente com o elemento da tag. &lt;/p&gt;<br>
+					<img src="imgs/anatomia_tag_html.JPG" width="600" height="300"><br>
+					Cada elemento html pode possuir atributos. Os atributos sempre são inseridos na tag de abertura nunca na de fechamento. Os atributos são compostos por dois elementos, sendo eles: nome do elemento e valor do elemento. &lt;p id="myid"&gt; - Neste exemplo o valor de atributo "myid" é atribuido ao elemento id.<br>
+					<img src="imgs/anatomia_tag_html_atibute.JPG" width="600" height="300"><br> 
+					Sobre o valor dos atributos, nem sempre é nescessário cercar-los com o simbolo de "". No entanto é uma boa pratica sempre utilizar aspas simples ou aspas duplas para cercar o valor do atributo.<br>
+					<img src="imgs/anatomia_tag_html_aspas1.JPG" width="600" height="300"><br>
+					Semanticamente o valor de aspas simples ou duplas são equivalentes para o html, logo não existe diferença de sintaxe ou semantica em usar qualquer um dos dois.<br>
+					Pode tornar-se interessante fazer uso conjungado das aspas simples e duplas quando se tem um aninhamento de valores dentro do atributo. No enteanto é importante ficar atento para que cada par de aspas feche corretamente com o seu de dentro para fora e de fora para dentro.<br>
+					<img src="imgs/anatomia_tag_html_aspas2.JPG" width="600" height="300"><br>
+			</article>
+		</section>
+		<section id="class04">
+			<article>
+				<h3>Estrutura basica do HTML</h3>
+					A estrutura do documento html é definida por suas tags principais, em um formato de blocos e que podem ser aninhadas umas as outras. desta forma temos a estrutura base sa segunte forma:<br><br>
+					&lt;!doctype html&gt;<br>
+					&lt;html&gt;<br>
+					&lt;head&gt;<br>
+					&lt;/head&gt;<br>
+					&lt;body&gt;<br>
+					&lt;/body&gt;<br>
+					&lt;footer&gt;<br>
+					&lt;/footer&gt;<br>
+					&lt;/html&gt;<br><br>
+					Vejamos o que cada bloco representa:<br><br>
+					&lt;!dovtype html&gt; - Define compatibilidade da pagina com HTML5.<br> 
+					&lt;html&gt; - Abertura do bloco html que aninha todo conteudo html da pagina. <br>
+					&lt;head&gt; - Abertura do bloco que aninhas as informações de cabeçalho da pagina.<br>
+					&lt;/head&gt; - Fechamento do bloco cabeçalho.<br>
+					&lt;body&gt; - Abertura do bloco que representa o corpo (conteudo) de pagina.<br>
+					&lt;/body&gt; - Fechamento do bloco de conteudo.<br>
+					&lt;footer&gt; - Abertura do bloco de rodapé da pagina.<br>
+					&lt;/footer&gt; - fechamento do bloco de rodapé.<br>
+					&lt;/html&gt; - Fechamento do bloco html.<br><br>
+			</article>
+		</section>
+		<section id="class05">
+			<article>
+				<h3>Modelos de Conteudo</h3>
+					Estre trecho do curso retrata a utilização de elementos de bloco e elementos inline.<br>
+					O padrão HTML5, trouxe algumas modificações sobre como utilzar elementos de bloco e elementos inline, de tal forma que algumas regras não permitem que algumas tags sejam aninhadas uma dentro da outra. Ou melhor explicando... o Navegadr permite que visualmente as tags sejam aninhadas, mas ao tentar validar o documento html em um validador oficial, varios erros de aninhamento serão apontados.
+			</article>
+		</section>
+	<h2> - - - - - - - - - - TAGS ESSENCIAIS DO HTML5 - - - - - - - - - -</h2>
+		<section id="class06">
+			<article>
+				<h3>Elementos de Titulo</h3>
+					Na linguagem HTML nós temos o que chamamos de elementos semanticos. Um elemento semantico é um elemento que possui algum signifaco inerente. Sendo assim podemos entender que um elemento semantico é um elemento que diz algo sobre o conteudo, pode ser sobre sua importancia, um pouco da sua descrição, basicamente sugere algo sobre seu significado.<br>
+					A razão para isso é que computadores e humanos podem entender melhor uma tag semantica do que alguma tag sem signifaco algum simplesmente estrutural. Agora tomando como exemplo as tags de cabeçalho, nós temos o seguinte:<br>
+					&lt;h1&gt; &lt;/h1&gt;<br>
+					&lt;h2&gt; &lt;/h2&gt;<br>
+					&lt;h3&gt; &lt;/h3&gt;<br>
+					&lt;h4&gt; &lt;/h4&gt;<br>
+					&lt;h5&gt; &lt;/h5&gt;<br>
+					&lt;h6&gt; &lt;/h6&gt;<br>
+					EM termos de titulo, podemos esperar a seguinte visualização:	
+					<h2>Titulo do conteudo - H2</h2>
+					<h3>Titulo do conteudo - H3</h3>
+					<h4>Titulo do conteudo - H4</h4>
+					<h5>Titulo do conteudo - H5</h5>
+					<h6>Titulo do conteudo - H6</h6>
+
+					O titulo mais importante desta lista é: Titulo do conteudo - H2, em quanto que o menos importante é o: Titulo do conteudo - H6. Perceba que automaticamente o navegador atribui uma diferença na formatação da fonte entre os titulos de acordo com sua prioridade. É isto que queremos dizer quando um elemento semantico possui valor.<br>
+					No entanto é importante ressaltar que mesmo que o navegador apresente uma diferença visual na exibição dos titulos, eles não devem ser utilizados para este fim. Os titulos servem para ressaltar a importancia do conteudo no documento html, e nada mais. Qualquer estilização deve ser feita através de CSS.
+			</article>
+		</section>
+		<section id="class07">
+			<article>
+				<h3>Listas</h3>
+					Lista é uma ferramenta inerente a personalidade e a forma de pensar do ser humano. Temos a tendencia de lisar coisas para estruturar nossa linha de raciocinio e definir prioridades.Por exemplo:<br>
+					<ul>
+						<li>Lista de compras do supermercado</li>
+						<li>Lista de tarefas do dia.</li>
+						<li>Lista de questões de uma prva.</li>
+						<li>Lista de ingredientes para auma receita</li>
+					</ul>
+					Sabendo disos fica facil entender que listas, é uma poderosa feramenta de gestão e organização. Por isso também aplicada ao html. Na linguagem html as listas se divides em dois tipos, sentdo eles: Listas Ordenadas e Listas Não ordenadas. Independentemente do tipo de lista, é nescessários adicionar a cada lista os itens de lista (seus itens), representados pela tag: &lt;li&gt; &lt;li&gt;<br>
+					Portanto, é nescessário criar as tags de lista (ordenadas ou não ordenadas), e dentro delas aninhar as tags de itens de lista.
+
+					<p>
+						<h5>Listas ordenadas:</h5>
+						Consiste em conjunto de itens numerados em formato de lista, propondo assim a idea de uma lista com itens ordenados.<br>São representadas pela tag: &lt;ol&gt; &lt;/ol&gt;
+						<ol>
+							<li>lista Ordenada</li>
+							<li>lista Ordenada</li>
+							<li>lista Ordenada</li>
+							<li>lista Ordenada</li>
+						</ol>
+						<h5>Lista Não Ordenada</h5>
+						consiste em um conjunto de itens represetados por pontos sem nenhum tipo de numeração, em formato de lista. propondo assim a ideia de uma lista com itens não ordenados..
+						<ul>
+							<li>Lista Não Ordenada</li>
+							<li>Lista Não Ordenada</li>
+							<li>Lista Não Ordenada</li>
+							<li>Lista Não Ordenada</li>
+						</ul> 
+					</p>
+			</article>
+		</section>
+		<section id="class08">
+			<article>
+				<h3>Referencia de entidades de caracteres HTML</h3>
+					Na linguagem html utilizamos caracteres especiais para escrever usa sintaxe. É comum precisar utilizar estes mesmos caracteres especiais no conteudo reproduzido na pagina, se apenas digitarmos os caracteres, o navegador os interpretará como parte da sematica html. para que isos não acnteça e posamos represetalos no conteudo utilizamos as entidades ed caracteres html.<br> Eis pincpais exempos abaixo:
+					<ul>
+						<li>Caracrete: &lt;  Representado: & lt; - (sem espaços na digitação)</li>
+						<li>Caracrete: &gt;  Representado: & gt; - (sem espaços na digitação)</li>
+						<li>Caracrete: &amp;  Representado: & amp; - (sem espaços na digitação)</li>
+						<li>Caracrete: &copy;  Representado: & copy; - (sem espaços na digitação)</li>
+						<li>Caracrete: &quot;  Representado: & quot; - (sem espaços na digitação)</li>
+						<li>Não quebrar espaço entre palavras;  Representado: & nbsp; - (sem espaços na digitação)</li>
+					</ul>
+			</article>
+		</section>
+		<section id="class09">
+			<article>
+				<h3>Criando Links</h3>
+					Para criar hiperlinks em um documento html utilizamos a tag - &lt;a&gt; - o elemento 'a' represneta ancor = ancora. Semanticamente remete a ideia de que este link possui uma ancora com outra pagina html. Existem duas formas de apontar o link para outro documento html, uma é referenciando o arquivo html e a outra e referenciando a url da pagina html.<br>
+					1ª - link interto, apontar para um arquivo html - se você tem o arquivo htm salvo em um diretorio local, você pode inserir o caminho do diretorio seguido do nome do arquivo. --- &lt;a href="nome_arquivo.html"&gt;Conteudo do link&lt;/a&gt;<br>
+					2ª - link externo, apontar para uma url web - se você vai inserir um link para uma pagina da internet, é nescessário apontar para a url da pagina na internet.--- &lt;a href="http://site.com"&gt;Conteudo do link&lt;/a&gt;<br>
+					Se o link da pagina for quebrado, ou o diretorio da arquivo html for modificado, a pagina não será encontrada.<br>
+					<br>
+					Outra forma de trabalhar com links, é criando links para seções dentro da pagina html. Pa isso, utilizamos a tag de ancora &lt;a&gt;, e no lugar do endereço da pagina, iremos utilizar o simbolo '#' seguido do nome de link para seção. Ficando dessa forma:<br>
+					&lt;a href="#nome_seção"&gt;Conteudo do link&lt;/a&gt;<br>
+					Após isso basta atribuir o elemento de ID na tag para onde o usuário será encaminhado na pagina. Utilizar o nome de seção criado no link sem o caraqctere de '#'. E então ao clicar no link você será encaminhado para seção designada.<br>
+					Esta funcionalidade pode ser exemplificada ao clicar nos links para os topicos deste documento html, localizados no inicio da pagina.
+			</article>
+		</section>
+		<section id="class10">	
+			<article>
+				<h3>Exibindo Imagens</h3>
+					&lt;img&gt; Tag Imagem - utilizada para inserir elementos de imagem no documento html. Existem duas possibilidades no momento de inserir a imagem.<br>
+					1ª - apontar para um diretorio local - se você tem o arquivo de imagem salvo em um diretorio local, você pode inserir o caminho do diretorio seguido do nome do arquivo.<br>
+					2ª - apontar para um repositorio web - se você vai inserir uma imagem da internet, é nescessário apontar para a url onde a imgem está disponibilizada na internet.<br>
+					Se o link da imagem for quebrado, ou o diretorio da imagem for modificado, a imagem deixa de ser exibida na pagina html.
+			</article>
+		</section>			
+<hr>
+<h3>TAGS HTML utilizadas neste documento:</h3>
+<ol>
+	<li> &lt;!DOCTYPE html&gt; ------ Tag que declara ao navegador a versão do HTML utlizado.</li><br>
+	
+	<li> &lt;html&gt; &lt;/html&gt; ----------- serve para delimitar onde o conteudo html da pagina começa e onde ele termina. Toda a estrutura html deve estrar dentro desas das tags.</li><br>
+	
+	<li> &lt;head&gt; &lt;/head&gt; ----------- Esta tag indica o inicio e o fim da parte cabeçalho na estrutura do documento html. Neste cabeçalho, algumas informações de metadados podme ser fornecidas para guiar o navegador sobre a interpretação e rederização do arquivo html. Como é o caso das tags:  &lt;meta charset&gt; - &lt;html lang&gt; - &lt;title&gt;, as quais veremos logo asseguir.</li><br>
+	
+	<li> &lt;meta charset="utf-8"&gt; --- Esta tag informa ao navegado o tipo decodificação html que estamos utilizado. </li><br>
+	
+	<li> &lt;html lang="pt-br"&gt; ------- Tag que informa ao navegador a linguagem da pagina.</li><br>
+	
+	<li> &lt;title&gt; &lt;/title&gt; -------------- Tag que define o titulo da pagina que será exibida no navegador.</li><br>
+	
+	<li> &lt;body&gt; &lt;/body&gt; ------------ Body = corpo - Esta tag serve para delimitar a area em que será inserida o conteudo da pagina.</li><br>
+	
+	<li> &lt;h1 - h6&gt; &lt;/h1 - h6&gt; ------- Tags de titulo. O conteudo desta tag é lido pelo navegador como o titulo de conteudo. A relevancia do titulo é atribuida atraves da numeração. h1 mais relevante - h6 menos relevante</li><br>
+
+	<li> &lt;nav&gt; &lt;/nav&gt; --------------- nav = navegaçao - É uma tag que representa uma seção de navegação com link para outras paginas. Geralmente bastante utilizada em contextos de menus de acesso.</li><br>
+
+	<li> &lt;ol&gt; &lt;/ol&gt; ------------------ order list = lista ordenada - É uma tag que cria uma lista ordenada (numerada) de itens. A tag serve apenas para Criar a lista, aind é nescessário adicionar os itens da lista através da tag &lt;li&gt; </li><br>
+
+	<li> &lt;ul&gt; &lt;/ul&gt; ------------------ unorder list = lista não ordenada - É uma tag que cria uma lista não ordenada (pontilhado) de itens. A tag serve apenas para Criar a lista, ainda é nescessário adicionar os itens da lista através da tag &lt;li&gt;.</li><br>
+
+	<li> &lt;li&gt; &lt;/li&gt; ------------------- list iten = iten de lista - É uma tag que adiciona itens dentro de listar ordenadas ou não ordenadas.</li><br>
+
+	<li> &lt;br&gt; ------------------------- Quebra de linha = tag para fazer a quebra de linha em um texto.</li><br>
+
+	<li> &lt;p&gt; &lt;/p&gt; ------------------- Paragrafo - É uma tag que adiciona um campo de paragrafo dentro do html.</li><br>
+
+	<li> &lt;article&gt; &lt;/article&gt; ------- Artigo - Tag que adiciona um campo de artigo dentro do html.</li><br>
+
+	<li> &lt;footer&gt; &lt;/footer&gt; -------- Rodapé - Tag que representa a seção de rodapé do nosso arquivo html.</li><br>
+
+	<li> &lt;a&gt; &lt;/a&gt; -------------------- Ancora - Tag utilizada para criar a conexão de hiperlink entre um conteudo e outro. É possivel direcionar o usuário a outra pagina quando clicado no conteudo desta TAG</li><br>
+
+	<li> &lt;span&gt; &lt;/span&gt; ------------ Span - Tag para conteudo inline. No meu entendimento, é utilizada junto de outras tags para aplicar estilização em uma parte especifica do conteudo. A tag em si não gera valor semantico para o documento html</li><br>
+
+	<li> &lt;hr&gt; -------------------------- Quebra tematica - Cria uma linha horizontal na pagina html. Geralmente utilizada para fazer a quebra entre um tema e outro</li><br>
+
+	<li> &lt;img&gt; -------------------------- Imagem - tag utilizada para inserir elementos de imagem no documento html. Existem duas possibilidades no momento de inserir um arquivo de imagem, podendo ser interno ou externo.</li><br>
+
+	<li> &lt;section&gt; &lt;/section&gt; --------- Seção - utilziada para separar o conteudo da pagina em seções.</li><br>
+</ol>
+</body>
+<footer>
+<hr>
+	<nav>
+		<ul>
+			<li><a href="#top_page">Retornar ao topo da pagina</a></li>
+			<li><a href="aula_configuração_ambiente_html.html">Arquivo de configuração HTML</a></li>
+			<li><a href="https://www.coursera.org/learn/html-css-javascript-for-web-developers/supplement/89hoO/frequently-asked-questions" target="_blank">Forum de perguntas e regras</a></li>
+			<li><a href="https://clearlydecoded.com/" target="_blank">Pagina de coteudo do Instrutor</a></li>
+		</ul>
+	</nav>
+</footer>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+	<meta charset="utf-8">
+	<title>Review CSS</title>
+	<link rel="stylesheet" type="text/css" href="style_review week 2.css">
+</head>
+<body>
+	<h1 id="top_page">Revisão da semana 02 - CSS</h1>
+<nav>
+	<ul class="sites_externos">
+		<li><a href="https://clearlydecoded.com/recommended-books/" target="_blank">Lista de livros recomentadados</a></li>
+		<li><a href="http://csszengarden.com/" target="_blank">Site para ver estilizações css</a></li>
+	</ul>
+</nav>
+<section>
+	<h2>Noções Basicas de CSS</h2>
+	<article>
+		<h3>O poder do CSS</h3>
+		<p>Como foi retratado na revisão do tema HTML, quando se trata de paginas web, o conteudo é tudo! A linguagem html serve para estruturar este conteudo. No entanto a forma como o usuário consome este conteudo é muito importante para sua experiencia e eficacia. Podemos dizer que paginas com html puro contendo apenas o conteudo e a estrutura do documento, não tormam a experiencia do usuário completa e eficaz.<br>
+		A utilização de CSS (Cascading Style Sheets ou Folhas de Estilo em Cascata) serve para aplicar estilo a um documento web. Apesar de não modificar a estrutura html, através da estilização da pagina com CSS é possivel modificar a pagina de tal forma que o mesmo documento html com e sem estilização, pareçam ser documentos totalmente diferentes.
+		</p>
+	</article>
+	<article>
+		<h3>Anatomia de uma regra CSS</h3>
+		<p>CSS funciona associando regras com elementos html. Essas regras definem cmo o conteudo dos elementos especificados deve ser exibido. Estilizar uma pagina web inteira pode ser complexo, mas apenas definir uma regra CSS é bastante simples.<br>
+		Existem alguns elementos dentro da estilização CSS, são eles: O seletor que define qual tag está sendo estilizada. Por exemplo letra 'p' para a tag de paragrafo.<br>
+		<img src="imgs/anatomia_tag_css_seletor.JPG" alt="">
+		</p>
+		<p>O seletor é seguido de de uma par de chaves,  dentro destas chaves ficará o conteudo de estilização. A declaração CSS coniste em uma propriedade e seu valor. A sintaxe deve ser escrita declarando primeiramente a propriedade, seguida do simbolo dois pontos parar separar propriedade do valor, declarar o valor e finalizar com simbolo de ponto e virgula, conforme mostra a imagem abaixo.<br>
+		<img src="imgs/anatomia_tag_css_declaracao.JPG" alt="">
+		</p>
+		<p>É possivel que uma unica regra CSS seja constituida por varias declarações de estilização como mostrado abaixo.<br>
+		<img src="imgs/anatomia_tag_css_declaracao2.JPG" alt="">
+		</p>
+		<p>Uma coleção dessas regras de estilização é o que compões o arquivo que chamamod de folha de estilo (Stylesheet).<br>
+		<img src="imgs/anatomia_tag_css_stylesheet.JPG" alt="">
+		</p>
+	</article>
+	<article>
+		<h3>Seletores CSS - Elemento, Classe, Id</h3>
+		<p>Os seletores CSS são utilizados para determinar quais elementos devem receber a formatação de estilização definida ans declarações CSS. Neste paragrafo vamos falar sobre três tipos de seletores: Elemento, Classe e ID. É importante ter a perspicácia de aplicar as estilizaçãoes da melhor forma afim de ótimizar a estilização.<br>
+		Primeiramente o seletor elemento, neste especificamos apenas qual o elemento que receberá a estilização aplicada pelo CSS. Neste caso podemos observar o exemplo da tag paragrafo:<br>
+		<img src="imgs/seletor_css_elemento.JPG" alt=""> <img src="imgs/seletor_css_elemento2.JPG" alt=""><br>
+		Em seguida o seletor classe, este é especificado com um ponto seguido do nome da classe. Utilizando ele, é nescessário atribuir o elemento class a tag que irá receber a estilização.<br>
+		<img src="imgs/seletor_css_classe.JPG" alt=""> <img src="imgs/seletor_css_classe2.JPG" alt="">
+		Em seguida o seletor Id, este é especificado com um cerquilha seguido do nome id. Utilizando ele, é nescessário atribuir o elemento id a tag que irá receber a estilização.<br>
+		<img src="imgs/seletor_css_id.JPG" alt=""> <img src="imgs/seletor_css_id2.JPG" alt="">
+		</p>
+	</article>
+	<article>
+		<h3>Combinando Seletores</h3>
+		<p>
+			Uma forma de estilizar a pagina de maneira mais personalizada é utilizando a combinação de seletores. Vejamos algumas possibilidades.<br>
+			primeiro vamos conhecer a combinação: elemento+classe.<br>
+			Essa combinação permite atribuir a estilização CSS para todas as tags do elemento especificado que utilizam a classe indicada.<br>
+			É importante resaltar que na sintaxe correta deve ser escrito: "elemento.classe", sem o uso de nenhum espaço. Ao adinionar espaços o tipo de combinação muda copletamente. Vejamos um exemplo abaixo.<br>
+		<img src="imgs/combinando_seletores1.JPG" alt=""><br>
+		</p>
+		<p>
+			A segunda combinação é a de elemento filho. Neste caso podemos atribuir a estilização CSS a um elemento que seja filho direto de outro. Por exemplo, uma tag paragrafo que esteja aninhada diretamente em uma tag de artigo. Sua sintaxe corresponde da seguinte forma: elemento pai + &gt; + elemento filho (article > p), e deve ser utilizado espaço para separar casa elemento do sinal de maior.<br>
+		<img src="imgs/combinando_seletores2.JPG" alt=""><br>	
+		</p>
+		<p>
+			A proxima combinação é a de elemento descendente. Funciona de fora muito semelhante ao elemeto filho, mas neste caso podemos atribuir a estilização CSS a um elemento filho de qualquer nivel dentro de outro. Por exemplo, uma tag paragrafo que esteja aninhada  em qualquer nivel de uma tag artigo. Sua sintaxe corresponde da seguinte forma: elemento pai + eemento filho (article p), e deve ser utilizado espaço para separar os elementos.<br>
+		<img src="imgs/combinando_seletores3.JPG" alt=""><br>	
+		</p>
+	</article>
+	<article>
+		<h3>Seletores de Pseudo-Classe</h3>
+		<p>A maneira como você especifica o seletor de pseudo-classe é especificando algum seletor que todos nós já conhecemos com dois pontos e um nome de pseudo classe predefinido. Agora, existem muitos seletores de pseudo-classe. Alguns exemplo são:</p>
+		<ul>
+			<li>:link</li>
+			<li>:visited</li>
+			<li>:hover</li>
+			<li>:active</li>
+			<li>:nth-cild(...)</li>
+		</ul>
+		<p>Leia um pouco mais sobre elementos de Pseudo-classe e veja a lista d ealguns deles nos likns abaixo.</p>
+		<ul>
+			<li><a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/Pseudo-classes" target="_blank">Developer Mozila</a></li>
+			<li><a href="https://www.w3schools.com/css/css_pseudo_classes.asp" target="_blank">W3School</a></li>
+			<li><a href="https://www.devmedia.com.br/css-conheca-os-pseudo-elementos/38183" target="_blank">DevMedia</a></li>
+		</ul>
+	</article>
+	</section>
+	<section>
+	<h2>CSS - Regras, Resolução de Conflitos, Estilo de Texto</h2>
+	<article>
+		<h3>Folha de estilo</h3>
+		<p>Existem diversas formas de fazer uma declaração CSS, por exemplo, se você utilizar as tags &lt;style&gt; &lt;/style&gt; no bloco de cabeçalho do documento html, será possivel criar as declarações CSS que serão atribuidas ao documento web, mas isso de forma alguma é uma pratica recomendada. Outra forma de fazer uma declaração de estilo é na propria tag do elemento, mas esse recurso só é recomendado para uso de forma breve afim de testar a estilização em um elemento.<br> A forma formas mais indicada e também a mais praticada é criar um arquivo de folha de estilo. Um arquivo de folha de estilo nada mais é do que um arquivo de texto contendo o conjunto de declarações CSS a serem aplicadas, o arquivo comummente fica salvo com a extensão '.css'. Para aplicar essa estilização ao documento html, basta utilizar a tag - &lt;link rel="stylesheet" href"style.css"&gt; - A tag link é uma tag unica, não nescessita de uma tag de fechamento. O atriburo rel"" serve para especificar qual a categoria do arquivo que está sendo linkado, em quanto que o atributo href"" é utilizado para especificar o link do arquivo d estilização. Uma folha de estilização é melhor manuseada para estilizar um documento html já que alterando uma unica vez em um unico lugar a declaração CSS, a estilização sera aplicada a todo o conteudo html conforme especificado.
+		</p>
+	</article>
+	<article>
+		<h3>Resolução de Conflito CSS</h3>
+		<p>Como o nome sugere, "Folha de Estilo em Cascata", é possivel utilizar declarações CSS de diferentes locais em um mesmo documento html. Por exemplo, é possivel utilizar uma folha de estilo em casta junto com declarações da tag estilo do mesmo documento e ainda declarações inline. Para utilizar este recurso é importante ter conciencia de como resolver conflitos e de como o CSS se comporta em termos de prioridades de estilo. Para entender essa prioridades é importante conhecer quatro conceitos:</p>
+		<p>&gt;&gt; Origin - Origem:<br>
+		Quando duas declarações entram em conflito por especificar o mesmo atributo para o mesmo elemento, a regra de procedencia de origem é simples: A ultima declaração a ser lida é priorizada. Ou seja, se uma regra conflitante foi declarada na linha 12 e na linha 40, a declaração que prevalece é a da linha 40. Se a declaração foi feita em um arquivo externo a logica é a mesma, deve-se considerar que a fola de estilo css é aplicada a partir da linha que é declarada.</p>
+		<p>&gt;&gt; Merge - Fusão:<br>
+		Quando existe o conflito de declaração de estilização para o mesmo elemento porém para atibutos diferentes acontece a fusão. As duas declarações são consideradas e cada estilização de atributo é adicionada ao elemento.</p>
+		<p>&gt;&gt; Inheritance - Hierarquia:<br>
+		O conceito de herança é simples, quando fazemos uma declaração de estiçização css em uma arvore de tags, todos os descendentes desta tag receberão a mesma estilização. por exemplo, se eu especificar uma propriedade na tag body, cada elemento que é um filho de uma tag body, ou mesmo um filho de um child de uma tag body e assim por diante, herdará essa propriedade. Da mesma forma, se eu especificar uma propriedade em algum elemento dentro da minha página HTML, cada filho e neto e assim por diante desse elemento também herdarão essa propriedade. Mas obviamente, nenhum pai desse elemento herdará essa propriedade e , portanto, não será afetado por ela.</p>
+		<p>&gt;&gt; Specificity - Especificidade:<br>
+		O conceito de especificidade é simples, porem precisa de muita atenção para ser comparado. Em uma declaração que recebe um atributo conflitante, valores são adicionados a determinados tipos de seletores, a quantidade de itens atribuidos aos seletores também importa. de modo que nossa prioridade fica no seguintes seletores:<br> 1º - (style="") - 2º - (id="") - 3º - (psudo classe / atributo classe) - 4º - (# dos elementos).
+		A prioridade dos elementos é montada em forma de tabela e para cada elemento existente o seletor ganha um ponto, de forma que a declaração com a maior pontuação final vence. Segue como exemplo a imagem abaixo:<br>
+		<img src="imgs/prioridade_seletores_especificidade.JPG" alt=""></p>
+		<p>&gt;&gt; !important - Prioridade:<br>
+		O simbolo de prioridade serve para dizer ao documento que ignore qualquer outra declaração css e considere especificamente a declaração prioritária. Dessa forma o elemento é exibido com a declaração da tag prioritária. - p {color: green !important;} </p>
+	</article>
+	<article>
+		<h3>Estilo de Texto</h3>
+		<p>Existe uma enorme quantidade de estilização de textos. Apenas para fins de conhecimento vamos conhecer algumas:</p>
+		<ul>
+			<li> font-family: - Sere para indicar um conjunto de fonts de texto, diz ao navegador para utilizar no documento html, uma das fontes instaladas no computador do usuário dentre as fonts que foram especificadas na declaração css.</li>
+			<li> color: - utiizada para declarar a cor do texto, seu valor pode ser o nome da cor (ex: red, blue ...) ou o valor hexadecimal da cor desejada (ex: #0000ff, ff00ff ...).</li>
+			<li> font-style: - utiizada para declarar o estilo da font entre declarar uma fonte em formato italico ou normal.</li>
+			<li> font-weight: - utiizada para declarar o estilo da font entre declarar uma fonte em formato negrito ou normal. Pode receber como valor "bold" ou valor do negrito entre 100 e 900</li>
+			<li> font-size: - utiizada para declarar o tamanho da font em pixels. (ex: font-size: 22px;)</li>
+			<li> text-transform: - utiizada para declarar formato da fonte entre letras maiusculas, minusculas, apenas a primeira letra maiuscula etc. Pode receber como valor: capitalize, inherit, lowercase, none, uppercase, full-width</li>
+			<li> text-aling: - utiizada para decla~rar o alinhamento do texto, centralizado, a esquerda, direita etc. Pode receber como valor: center, inherit, justify, left, right, end</li>
+		</ul>
+	</article>
+	<article>
+		<h3>Box Model e Layout</h3>
+		<p>Em html cada elemento é representado graficamente como uma caixa. Essa caixa é estruturada da seguinte forma:<br>
+		[ magin [ border [ padding [elemento principal = tag] preenchimento ] borda ] magem ]<br>
+		<img src="imgs/the_box_model.JPG" alt=""><br></p>
+		<p>Sobre dimensionar a caixao, no geral as medidas de largura e altura são aplicadas ao elemento central, e não a caixa inteira, então quando utilizamos os atributos de Width para definir a largura não estamos limitando o tamanho de largura da caixa em si, mas sim o tamanho do elemento. Logo esta caixa irá medir de comprimento a medida especificada do elemento + as medidas de padding e border. Para de fato definir o comprimento da caixa como um todo é nescessário utilizar a propriedade border-box. A declaração em css fica escrita da seguinte forma: #box { box-sizing: border-box; }<br>
+		O atributo de berder-box não é herdavel por outras tags. Isso significa que não adianta adiciona-lo com a intenção de aplicar esta propriedade para todos os itens filhos da tag utilizada. Isso pode ser contornado utilizando o seletor estrela. Seletor estrela é um tipo de seletor prioritario, ele não demanda seus atributos em forma de herança, mas sim definitivamente atribuindo a cada elemento do documento do documento os atributos especificados.A declaração em css fica escrita da seguinte forma: * { box-sizing: border-box; }<br>
+		A margens laterais de uma box tem efeito cumulativo. Siginificar que se duas boxes estão coladas uma ao lado da outra e suas margens laterais medem respectivamente 40px e 50px, a margem total de distancia entre uma e outra será 90px<br>
+		<img src="imgs/the_box_model_margin.JPG" alt=""><br></p>
+		<p>Diferente das margens laterais, as margens superior e inferios de uma box tem efeito de colapso. Siginificar que se duas boxes estão coladas uma abaixo da outra e suas margens medem respectivamente 30px e 20px, a margem total de distancia entre uma e outra será 30px. Fica a margem que for maior.<br>
+		<img src="imgs/the_box_model_margin_cumulative.JPG" alt=""><br></p>
+		<p>Se a altura e largura da caixa for definida de maneira fixa e o contudo inserido for maior do que a area definida, este conteudo irá extravasar. Para evitar esse problema podemos utilizar o atributo overflow, juntamente com os valores: auto, hidden, scroll e visible  </p>
+	</article>
+	<article>
+		<h3>Posicionando Elementos com Flutuação</h3>
+		<p>Existem duas formas</p>
+	</article>
+	</section>
+</body>
+</html> 

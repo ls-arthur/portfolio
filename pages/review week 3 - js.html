@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+	<title>Review Week-4</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/script.js"></script>
+</head>
+<body>
+	<header>
+		<h1 id="top_page">Revisão da semana 03 - JS</h1>
+	</header>
+	<main>
+		<section>
+			<h2> JavaScript Basico</h2>
+			<article>
+				<h3>O que é JavaScript ?</h3>
+				<p>JavaScript é uma linguagem de programação, comumente  muito utilizada para o desenvolvimento, especialmente na parte de frontend.<br>Com ela é possível implementar itens complexos em páginas html. O JS Juntamente com HTML e CSS compõem às três principais tecnologias da Word Wide Web.</p>
+				<ul>
+					<li>É uma linguagem interpretada. Isso significa que seus comandos são interpretados um a um sem a nescessidade de um compilador. No caso do JS, o navegador faz o papel de interpretador.</li>
+					<li>Possui um excelente controle para manipulação de comportamento em paginas web com CSS e HTML</li>
+					<li>É uma linguagem Orientada a objeto.</li>
+					<li>Trabalha com variaveis globais de Locais</li>
+					<li>É uma linguagem Typada Dinamicamente. Isso signivica que não é nescessário declarar o tipo das variaveis, e que uma variavel pode mudar de tipo ao longo da execussão do código.</li>
+				</ul>
+				<p>Mais informações sobre o desenvolvimento com JS pode ser encontrado no site <a href="https://developer.mozilla.org" target="blank">Developer Mozila</a> na area de <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="blank">Tecnologia JavaScript</a><br>
+				Mais informações sobre o desenvolvimento com JS pode ser encontrado no site <a href="https://www.w3schools.com/" target="blank">W3Schools</a> na area de <a href="https://www.w3schools.com/js/default.asp" target="blank">Tecnologia JavaScript</a>
+				</p>	
+			</article>
+			<article>
+				<h3>Onde inserir o codigo JavaScript ?</h3>
+				<p>Existem duas maneiras de se trabalhar com o código JS. Na primeira podemos utilizar a tag 'script' para inserir codigo JS diretamente no documento html. Mas por questões de boas praticas de desenvolvimento este metodo não é muito utilizado. A segunda forma seria referenciando um um arquivo de configuração JS externo ao arquivo documento HTML. Para fazer a referencia utilizamos o parametro ' src"diretorio/arquivo.js" ' Dessa forma temos a seguinte semantica:</p>
+				<span class="line_code"> &lt;script src="js/script.js"&gt; &lt;/script&gt; </span>
+			</article>
+			<article>
+				<h3>Definindo Variaveis, Funções e Escopo</h3>
+				<p>Em JavaScript para devinir uma variavel utiliza-se a palavra reservada 'var' seguida do nome da variavel e seu valor atribuido.<br>
+				<span class="line_code"> var cor = "azul" </span><br>
+				Uma função é definida utilizando-se a pafavra reservada 'function'. Em Js é possivel criar uma função iniciando o código pela palara reservada, seguido do nome da função, seu parametro e sua ação. Outra forma é criando uma variavel e atribuindo uma função a esta variavel. A semantica ficaria da segutine forma:<br>
+				<span class="line_code"> function soma ("parametros") {...}</span><br>
+				<span class="line_code"> var soma = function ("parametros") {...}</span><br>
+				Dentro do codigo JS, as funções e variaveris ficam armazenadas dentro de dois escopos. 1. Escopo Global - 2. Excopo lexical<br>
+				Escopo Lexical - Refere-se a um escopo onde a variavel ou função é criada e declarada dentro de uma função. Sendo assim essa variavel só existe fisicamente dentro do escopo da função.<br>
+				Escopo Global - Refere-se a um escopo global onde a variavel ou função é criada é declarado no escopo global do codigo de forma a estar disponivel em todos os lugares.<br> 
+				O escopo em JS deverá se comportar da seguinte forma. para referencias não definidas, a variavel será procurada primeiramente dentro de seu escopo, se não encontrada, a variavel sera procurada dentro do escopo externo, se não encontrada seguirá sempre semdo buscada dentro de um excopo externo um nivel a mais acima até que por fim seja procurada dentro do escopo global. Se ainda sim não for encontrada, será definida como uma variavel indefinida.
+				</p>
+			</article>
+		</section>
+		<section>
+			<h2>Types JavaScript e construções de linguagem comum</h2>
+			<article>
+				<h3>JavaScript Types</h3>
+				<p> Em primeiro lugar, vamos entender um pouco sobre o que sãp e quais são os Types em JS.<br>
+				Um type é uma estrutura de dados particular. Types incorporados podem ser utilizados para criar outras estruturas de dados. Js possui 7 types, sendo eles 6 primitivos e 1 objeto.</p>
+				<ul>
+					<li>Um tipo objeto em JS refere-se a uma coleção de pares nome/valor.</li>
+					<li>Um tipo primitivo em JS representa um unico e imutavel valor.</li>
+				</ul>
+				<span>Tipos primitivos em JavaScript</span>
+				<ol>
+					<li>Boolean - corresponde a apenas dois valores: Falso e Verdadeiro.</li>
+					<li>Undefined - Corresponde a um tipo o qual nenhum valor foi definido.</li>
+					<li>Null - Corresponde a um valor nulo: isso significa a falta de valor.</li>
+					<li>Number - Refere-se na verdade ao unico tipo numérico em JavaScript.</li>
+					<li>String - Refere-se a uma sequencia de caracteres usado spara representar texto.</li>
+					<li>Simbol - Em JavaScript, um valor symbol é criado através da função Symbol() , que dinamicamente produz um valor único e anônimo.</li>
+				</ol>	
+			</article>
+			<article>
+				<h3>Construções de linguagem comum</h3>
+				<span>Operadores em JS:</span>
+				<ul>
+					<li>|| - (ou) - Operador 'ou' executa comparação onde apenas um item precisa ser verdadeiro para retornar um valor True.</li>
+					<li>&& - (e) - Operadoe 'e' executa comparação onde todos os itens devem ser verdadeiros para retornar um valor True.</li>
+				</ul>
+				<p>A concatenação de strings pode ser utilizada através da simbologia: '+=' semanticamente ficaria da seguinte forma:<br>
+				<span class="line_code">var string = "Hello"<br>string += World !"<br>console.log(string);<br>- - - "Hello World !" - - -</span></p>
+				<p>As operações matematicas em JS são muito semelhante a outras linguegens em questão de respeitar a precedencia de calculo levando em concideração a simbologia de () e []. Além disso Seus respectivos operadores por ordem de importancia são: Multiplicação (*) - Divisão (/) - Soma (+) - Subitração (-)</p>
+				<p>Em Js existem duas formas para comparação de igualdade, a regular e a estrita.</p>
+				<ul>
+					<li>Igualdade regular ( == ) - Converte o type das variaveis para comparar sua igualdade de valor.</li>
+					<li>Igualdade estrita ( === ) - Não converte o type e verica a igualdade tanto de valor quanto de type</li>
+				</ul>
+				<p>No JS é importante que durante a declaração de funções, na estrutura da função que o {} seja aberto na mesma linha de codigo em que a função é declarada. Neste caso não é apenas uma questão de estilo de escrita do codigo, mas sim a forma da sintaxe em que a lingugem é interpretada.<br>De outra forma o JS interpretará como se o comando recebesse um ';' e pulasse de linha esperando o inicio de um novo comando, o que pode acabar gerando um erro de sintaxe.</p>
+				<p>Utilizar a simbologia de ';' não é algo obrigatorio no JS. No entanto é uma boa pratica e recomendavel a utilização de ';' ao final de cada declaração.</p>
+			</article>
+		</section>
+		<section>
+			<h2>Objetos e Funções em JS</h2>
+			<article>
+				<h3>Criando objetos com "new Object()"</h3>
+			</article>
+		</section>	
+	</main>
+	<footer>
+		
+	</footer>
+</body>
+</html>
